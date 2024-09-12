@@ -16087,6 +16087,7 @@ a.color-blue-hover-black:hover {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #E8E8E8;
+  transition: all 0.2s linear;
 }
 @media (max-width: 991px) {
   .header {
@@ -16095,6 +16096,15 @@ a.color-blue-hover-black:hover {
     padding-bottom: 0;
     margin-bottom: 0;
   }
+}
+.header.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 4;
+  transition: all 0.2s linear;
 }
 @media (min-width: 1400px) {
   .header .container {
@@ -16111,6 +16121,11 @@ a.color-blue-hover-black:hover {
   .headerLogo {
     width: 176px;
   }
+}
+.headerW {
+  max-width: 1375px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 991px) {
   .headerW {
@@ -16358,6 +16373,9 @@ a.color-blue-hover-black:hover {
   .introMain .introTitle {
     margin-top: 24px;
   }
+}
+.introMain .header.fixed {
+  width: 100%;
 }
 .intro.min-h-unset .container {
   min-height: unset;

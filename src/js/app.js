@@ -261,12 +261,30 @@ clearArray.forEach(el => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+	const hero = document.querySelector('main .sect');
+	const header = document.querySelector('.header');
+	const mainEl = document.querySelector('.main');
 
-// $(window).on('scroll', function () {
-//   var scroll = $(window).scrollTop();
-//   if (scroll < 400) {
-//     $('#navFixed').fadeOut(500);
-//   } else {
-//     $('#navFixed').fadeIn(500);
-//   }
-// });
+	const headerFixed = () => {
+		let scrollTop = window.scrollY;
+		let heroCenter = hero.offsetHeight;
+
+		if (scrollTop >= heroCenter) {
+			header.classList.add('fixed')
+			mainEl.style.marginTop = `${header.offsetHeight}px`;
+		} else {
+			header.classList.remove('fixed')
+			mainEl.style.marginTop = `0px`;
+		}
+	};
+
+	headerFixed();
+
+	window.addEventListener('scroll', () => {
+		headerFixed();
+    console.log(header.offsetHeight);
+	});
+});
+
+
