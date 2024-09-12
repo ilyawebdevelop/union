@@ -1,0 +1,43 @@
+.callback {
+
+  &W {
+    padding: 50px;
+    padding-bottom: 60px;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('@img/callback/image-1.jpg');
+    @media(max-width: 575px){   
+      background-image: url('@img/callback/image-1-sm.jpg');
+      background-position: top;
+    }
+    @media(max-width: 575px){
+      padding: 32px 24px;
+    }
+    &--linear-white {
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        top: 0;
+        background: linear-gradient(162deg, #fafafa 0%, rgba(250, 250, 250, 0.96) 19%, rgba(250, 250, 250, 0.82) 41%, rgba(250, 250, 250, 0) 100%);
+        border-radius: 8px;
+      }
+      .callbackTitle {
+        position: relative;
+        z-index: 1;
+      }
+      .form {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  &Title {
+    max-width: 570px;
+  }
+}

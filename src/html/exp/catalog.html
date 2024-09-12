@@ -1,0 +1,56 @@
+<section class="sect catalogSect">
+  <div class="container">
+    <h2 class="sectHead h2">
+      Каталог успешно привезенных авто и техники
+    </h2>
+    @@include('filter.html',{})
+    <div class="justify-content-between sortW d-none d-lg-flex">
+      <div class="d-flex align-items-center gap-2">
+        <span class="h4">Найдено:</span>
+        <span class="h4 color-gray5">186 авто</span>
+      </div>
+      <div class="d-flex gap-4">
+        <span class="h4">Сортировка:</span>
+        <a class="sortLink active d-flex gap-2 align-items-center" href="#">
+          <span class="h4 mb-0">По цене</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#sort"></use>
+          </svg>
+        </a>
+        <a class="sortLink d-flex gap-2 align-items-center" href="#">
+          <span class="h4 mb-0">По оценке</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#sort"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="row mt-4 catalogGrid">
+      <div class="col-6 col-lg-4 col-xl-3 mb-3 mb-lg-4 catalogCardW">
+        @@include('../catalog/catalog-card-jap.html',{})         
+      </div>
+      <div class="col-6 col-lg-4 col-xl-3 mb-3 mb-lg-4 catalogCardW">
+        @@include('../catalog/catalog-card-toyota.html',{})         
+      </div>
+      <div class="col-6 col-lg-4 col-xl-3 mb-3 mb-lg-4 catalogCardW">
+        @@include('../catalog/catalog-card-jap.html',{})         
+      </div>
+      <div class="col-6 col-lg-4 col-xl-3 mb-3 mb-lg-4 catalogCardW">
+        @@include('../catalog/catalog-card-toyota.html',{})         
+      </div>
+      <div class="col-6 col-lg-4 col-xl-3 mb-3 mb-lg-4 catalogCardW">
+        @@include('../catalog/catalog-card-jap.html',{})         
+      </div>
+      <div class="col-6 col-lg-4 col-xl-3 mb-3 mb-lg-4 catalogCardW">
+        @@include('../catalog/catalog-card-toyota.html',{})         
+      </div>
+    </div>
+
+    <div class="mt-3">
+      @@include('../pagination.html',{})     
+    </div>
+  
+
+  </div>
+</section>

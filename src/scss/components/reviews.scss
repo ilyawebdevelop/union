@@ -1,0 +1,63 @@
+.reviews {
+  &Title {
+    width: fit-content;
+  }
+  &Slider{
+    overflow: visible;
+    @media(max-width: 575px){
+      padding-right: 40px;
+    }
+    &W {
+      overflow: hidden;
+    }
+  }
+  &Slide {
+    height: auto;
+    .reviewsCard {
+      height: 100%;
+    }
+  }
+  &Card {
+    background-color: var(--gray1);
+    padding: 24px 24px 32px;
+    border-radius: 8px;
+
+    &Person {
+      &Icon {
+        width: 48px;
+      }
+    }
+    &Logo {
+      height: fit-content;
+    }
+    .content {
+      // height: 73px;
+      &--hidden {
+        &::after {
+          background: linear-gradient(to bottom, rgba(#FAFAFA, 0.4) 0%, #FAFAFA 100%);
+        }
+       
+      }
+    }
+  }
+}
+.reviewsContent {
+  margin-top: 60px;
+  @media(max-width: 991px){
+    margin-top: 46px;
+  }
+}
+.sortSmW {
+  @media(max-width: 991px){
+    width: 100%;
+  }
+}
+.reviewsPage{
+  .reviewsCard {
+    height: 100%;
+  }
+}
+.reviewsImg {
+  width: 100%;
+  height: auto;
+}

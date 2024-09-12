@@ -1,0 +1,40 @@
+<section class="catalogSliderW sect">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center sectHead">
+      <h2 class="h2 reviewsTitle pb-2 border-b-gray-4">Подобные автомобили</h2>
+      <div class="sliderNav gap-2 d-none d-lg-flex">
+        @@include('../components/slider-nav.html',{})
+      </div><!-- /sliderNav -->
+    </div>
+
+    <div class="swiper catalogSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-jap.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-toyota.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-jap.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-toyota.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-jap.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-toyota.html',{})
+        </div><!-- /catalogSlide -->
+
+      </div>
+    </div>
+    <a href="#" class="d-flex d-lg-none button button--blue gap-2 mt-4 catalogBtn">
+      Перейти в каталог
+      <img src="@img/icons/btn-arrow-white.svg" alt="arrow">
+    </a>
+
+  </div>
+</section>

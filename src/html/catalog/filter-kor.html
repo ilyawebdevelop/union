@@ -1,0 +1,169 @@
+<nav class="filterNav p-2 d-none d-lg-block">
+  <ul class="d-flex flex-wrap gap-4">
+    <li class="active">
+      <a class="d-flex align-items-center gap-2" href="#">
+        <img src="@img/admin/flag/jap.svg" alt="flag">
+        Япония
+      </a>
+    </li>
+    <li>
+      <a class="d-flex align-items-center gap-2" href="#">
+        <img src="@img/admin/flag/kor.svg" alt="flag">
+        Корея
+      </a>
+    </li>
+    <li>
+      <a class="d-flex align-items-center gap-2" href="#">
+        <img src="@img/admin/flag/gruz.png" alt="flag">
+        Спецтехника
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="filterContent">
+  <div class="row">
+    <div class="col">
+      <div class="inputW-sm-hide">
+        <div class="d-flex d-lg-none justify-content-between mb-4">
+          <h2 class="h2">Фильтры</h2>
+          <button class="filterContentClose"><img src="@img/icons/close.svg" alt="close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4">
+      <div class="inputW">
+        <div class="mb-2 fw-medium inputName d-none d-lg-block">Марка</div>
+        <select name="marka" id="marka" class="formSelect">
+          <option class="d-none" value="default">Марка</option>
+          <option value="any">Любая</option>
+          <option value="vw">VW</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4">
+      <div class="inputW">
+        <div class="mb-2 fw-medium inputName d-none d-lg-block">Модель</div>
+        <select name="model" id="model" class="formSelect">
+          <option class="d-none" value="default">Модель</option>
+          <option value="any">Любая</option>
+          <option value="100">100</option>
+          <option value="80">80</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide">
+      <div class="inputW">
+        <div class="mb-2 fw-medium inputName d-none d-lg-block">Пробег, км</div>
+        <div class="inputDualW d-flex">
+          <div class="inputDual">
+            <span class="fw-medium">От</span>
+            <input type="text" placeholder="Пробег от">
+          </div>
+          <div class="inputDual">
+            <span class="fw-medium">До</span>
+            <input type="text" placeholder="Пробег до">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide">
+      <div class="inputW">
+        <div class="mb-2 fw-medium inputName d-none d-lg-block">Год</div>
+        <div class="inputDualW d-flex">
+          <div class="inputDual">
+            <span class="fw-medium">От</span>
+            <input type="text" placeholder="Год от">
+          </div>
+          <div class="inputDual">
+            <span class="fw-medium">До</span>
+            <input type="text" placeholder="Год до">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
+      <div class="inputW">
+        <div class="mb-2 fw-medium inputName d-none d-lg-block">Цвет</div>
+        <select name="cvet" id="cvet" class="formSelect">
+          <option class="d-none" value="default">Цвет</option>
+          <option value="any">Любой</option>
+          <option value="belyi">Белый</option>
+          <option value="sinii">Синий</option>
+          <option value="seryi">Серый</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
+      <div class="inputW">
+        <div class="mb-2 fw-medium inputName d-none d-lg-block">Объём двигателя</div>
+        <div class="inputDualW d-flex">
+          <div class="inputDual">
+            <span class="fw-medium">От</span>
+            <input type="text" placeholder="Двигатель от">
+          </div>
+          <div class="inputDual">
+            <span class="fw-medium">До</span>
+            <input type="text" placeholder="Двигатель до">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
+      <div class="inputW">
+        <div class="mb-2 fw-medium inputName d-none d-lg-block">Цена</div>
+        <div class="inputDualW d-flex">
+          <div class="inputDual">
+            <span class="fw-medium">От</span>
+            <input type="text" placeholder="Цена от">
+          </div>
+          <div class="inputDual">
+            <span class="fw-medium">До</span>
+            <input type="text" placeholder="Цена до">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
+      <div class="inputW">
+        <div class="mb-2 fw-medium inputName d-none d-lg-block">Лот</div>
+        <input type="text" class="formInput" placeholder="Поиск по номеру лота">
+      </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 sortW">
+      <div class="inputW">     
+        <select name="kuzov" id="kuzov" class="formSelect">
+          <option value="deshevyie">Сначала дешёвые</option>
+          <option value="diesel">Дорогие</option>
+          <option value="benzin">По дате</option>
+        </select>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="row filterAction">
+    <div class="col">
+      <div class="d-flex justify-content-between">
+
+        <button class="filterBtnHide d-none d-lg-flex gap-2 align-items-center">
+          <span>Свернуть параметры</span>
+          <span>Показать все параметры</span>
+          <img src="@img/icons/arrow-up-blue.svg" alt="arrow">
+        </button>
+
+        <div class="d-flex gap-2 flex-column-reverse flex-lg-row btnW">
+          <button class="button button--blue gap-1">Показать<span class="d-inline-block d-lg-none"> 186 авто</span></button>
+          <button class="button button--transparent resetBtn">Очистить</button>
+          <button class="filterBtnCallContent button button--transparent">
+            Показать все параметры
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<section class="sect pt-2 news news--page">
+  <div class="container">
+
+    <h1 class="h1 mb-4 mb-lg-5">Новости</h1>
+
+    <div class="d-none d-lg-flex gap-2 flex-wrap catLogoW catLogoW--border-gray sectHead">
+      <a class="carLogo carLogo--array" href="#">
+        Все новости
+      </a>
+      <a class="carLogo px-4 gap-3" href="#">
+        Категория
+      </a>
+      <a class="carLogo px-4 gap-3" href="#">
+        Категория
+      </a>
+      <a class="carLogo px-4 gap-3" href="#">
+        Категория 2
+      </a>
+      <a class="carLogo px-4 gap-3" href="#">
+        Категория 3
+      </a>
+      <a class="carLogo px-4 gap-3" href="#">
+        Категория 4
+      </a>
+    </div><!-- /brand-cats -->
+    <select name="newsCat" id="newsCat" class="d-block d-lg-none formSelect formSelect--gray mb-4">
+      <option value="cat_1">Категория 1</option>
+      <option value="cat_2">Категория 2</option>
+      <option value="cat_3">Категория 3</option>
+    </select>
+
+    <div class="row mt-3 reviewsPage">
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-1.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-2.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-1.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-1.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-2.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-1.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-1.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-2.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-4">
+        @@include('../catalog/news-card-1.html',{})
+      </div>
+    </div>
+    <div class="mt-0 mt-lg-3">
+      @@include('../pagination.html',{})
+    </div>
+
+  </div>
+</section>

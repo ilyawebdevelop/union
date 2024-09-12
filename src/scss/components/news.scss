@@ -1,0 +1,57 @@
+.news {
+
+  .catalogCardImg {
+    img {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      @media(max-width: 575px){
+        height: 60vw;
+      }
+    }
+  }
+  .catalogCardTitle {
+    max-width: 375px;
+    @media(max-width: 575px){
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .caption {
+    @media(max-width: 575px){
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &--page {
+    .catalogCardImg {
+      img {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    }
+    .caption {
+      @media(max-width: 575px){
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    .catalogCardTitle {
+      @media(max-width: 575px){
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+.article {
+  &Img {
+    border-radius: 8px;
+    max-height: 620px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 35px;
+    @media(max-width: 991px){
+      margin-bottom: 20px;
+    }
+  }
+}

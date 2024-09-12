@@ -1,0 +1,26 @@
+.why {
+  padding-bottom: 80px;
+  @media(max-width: 991px){
+    padding-bottom: 0;
+  }
+  .sectHead {
+    @media(max-width: 991px){
+      margin-bottom: 40px;
+    }
+  }
+}
+.whyItem {
+  @media(max-width: 1199px){
+    margin-bottom: 60px;
+  }
+
+  .text--lg {
+    line-height: 30px;
+    font-weight: 500;
+    @media(max-width: 991px){
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.video {
+  &Sect {
+    background: #010034 url('@img/video/bg.png') no-repeat right center / 500px;
+    @media(max-width: 767px){
+      background: #010034;
+    }
+  }
+  &Text {
+    max-width: 635px;
+    &.color-gray4 {
+      @media(max-width: 767px){
+        color: #fff;
+      }
+    }
+  }
+  &Slider {
+    overflow: visible;
+    &W {
+      overflow: hidden;
+    }
+  }
+  &Slide {
+
+    &Img {
+      border-radius: 8px;
+      height: 233px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      transition: opacity .2s linear;
+      cursor: pointer;
+      &:hover {
+        opacity: .8;
+      }
+      @media(max-width: 575px){
+        height: 55vw;
+      }
+    }
+    &Title {
+      cursor: pointer;
+      transition: color .2s linear;
+      &:hover {
+        color: var(--blue);
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+// modal
+.modal {
+  display: none;
+  width: 700px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  height: fit-content;
+
+  @media(max-width: 420px) {
+    padding: 30px;
+  }
+
+  &Descr {
+    margin-top: 15px;
+    max-width: 380px;
+    margin-bottom: 15px;
+  }
+
+  .f-button {
+    right: 6px;
+    top: 6px;
+  }
+
+  .agreement {
+    margin-top: 15px;
+    line-height: normal;
+  }
+}
+
+.fancybox__backdrop {
+  background: rgba($color: #1E1E1E, $alpha: .62);
+}
+
+.fancybox__content {
+  color: #1E1E1E;
+  border-radius: 0; 
+  position: relative;
+  height: fit-content;
+}
+.modalGrid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 60px;
+  @media(max-width: 1400px){
+    column-gap: 30px;
+  }
+  @media(max-width: 767px){
+    column-gap: 0;
+  }
+}
+.modalLeft {
+  grid-column: 5 span;
+  @media(max-width: 767px){
+    grid-column: 12 span;
+  }
+}
+.modalRight {
+  grid-column: 7 span;
+  @media(max-width: 767px){
+    grid-column: 12 span;
+  }
+}
+#modalReviews {
+  width: 960px;
+  padding: 55px;
+  @media(max-width: 1400px){
+    padding: 55px 40px;
+  }
+  @media(max-width: 767px){
+    padding: 60px 24px ;
+  }
+}
+.f-button.is-close-btn {
+  background-color: transparent;
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}

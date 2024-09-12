@@ -1,0 +1,87 @@
+<section class="catalogSliderW sect">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap sectHead">
+      <div class="d-flex align-items-start gap-2 gap-lg-3">
+        <img src="@img/admin/flag/jap.svg" alt="flag" class="title-flag">
+        <h2 class="h2 title-flag-h2">Каталог автомобилей с аукционов Японии</h2>
+      </div>
+      <a href="#" class="d-none d-lg-flex button button--blue gap-2">
+        Каталог
+        <img src="@img/icons/btn-arrow-white.svg" alt="arrow">
+      </a>
+    </div><!-- /sectHead -->
+
+    <div class="d-none d-lg-flex align-items-center justify-content-between flex-wrap gap-3">
+
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="carLogo carLogo--array" href="#">
+          Все
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-1.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-2.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-3.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-4.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-5.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-6.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-7.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-8.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-9.png" alt="logo">
+        </a>
+        <a class="carLogo" href="#">
+          <img src="@img/admin/brand/logo-10.png" alt="logo">
+        </a>
+      </div><!-- /brand-cats -->
+
+      <div class="sliderNav gap-2">
+        @@include('../components/slider-nav.html',{})
+      </div><!-- /sliderNav -->
+    </div>
+
+    <div class="swiper catalogSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-jap.html',{})         
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-toyota.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-jap.html',{})         
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-toyota.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-jap.html',{})         
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-toyota.html',{})
+        </div><!-- /catalogSlide -->
+
+      </div>
+    </div>
+    <a href="#" class="d-flex d-lg-none button button--blue gap-2 mt-4 catalogBtn">
+      Перейти в каталог
+      <img src="@img/icons/btn-arrow-white.svg" alt="arrow">
+    </a>
+
+  </div>
+</section>

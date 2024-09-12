@@ -1,0 +1,178 @@
+// Footer
+.footer {
+  background-color: #010034;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  @media(max-width: 991px){
+    padding-bottom: 100px;
+  }
+
+  &Nav {
+    ul {
+      li {
+        margin-bottom: 12px;
+
+        a {
+          text-decoration: underline;
+          text-decoration-color: transparent;
+          text-underline-offset: 5px;
+          transition: text-decoration-color .2s linear;
+
+          &:hover {
+            text-decoration-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .socials {
+
+    li {
+      a {
+        svg {
+          width: 48px;
+          height: 48px;
+
+          @media(max-width: 767px) {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  .socialLink {
+    img {
+      @media(max-width: 767px) {
+        width: 32px;
+      }
+    }
+  }
+}
+
+.footerPhone {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footerPolitic {
+  &.text--white {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 5px;
+    transition: text-decoration-color .2s linear;
+
+    &:hover {
+      text-decoration-color: #fff;
+      color: #fff;
+    }
+  }
+}
+
+.footerDevelop {
+  .text--white {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 5px;
+    transition: text-decoration-color .2s linear;
+
+    &:hover {
+      text-decoration-color: #fff;
+    }
+  }
+}
+
+.navFixed {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 1;
+  padding: 16px;
+  background-color: var(--blue);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: var(--dark-blue);
+  }
+
+  @media(max-width: 1400px) {
+    padding: 12px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @media(max-width: 1400px) {
+      row-gap: 8px;
+    }
+
+    li {
+      a {
+        svg {
+          width: 40px;
+          height: 40px;
+          stroke: transparent;
+          fill: var(--white);
+
+          @media(max-width: 1400px) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+    display: none;
+  }
+}
+
+.navBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+  padding: 10px 16px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+
+  @media(max-width: 991px) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  &Link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 100px;
+    &:hover {
+      .navBarIcon{
+        stroke: var(--blue);
+      }
+    }
+  }
+  &Icon {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: var(--black);
+    stroke-width: 1.5px;
+    transition: stroke .2s linear;
+  }
+  &Text {
+    font-size: 9px;
+    line-height: 10px;
+    font-weight: 500;
+  }
+}

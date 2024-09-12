@@ -1,0 +1,64 @@
+.years {
+  padding-left: 30px;
+  @media(max-width: 575px){
+   padding-left: 23px; 
+  }
+  ul {
+    li {
+      position: relative;
+      margin-bottom: 12px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: -30px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--blue);
+        @media(max-width: 575px){
+          left: -23px;
+        }
+      }
+      &:not(:last-child){
+        &::after {
+          content: '';
+          position: absolute;
+          left: -26px;
+          height: calc(100% - 5px);
+          width: 2px;
+          top: 21px;
+          background-color: var(--blue);
+          @media(max-width: 575px){
+            left: -19px;
+          }
+        }
+      }
+    }
+  }
+}
+.company {
+  &AdvGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+  &AdvItem {
+    grid-column: 4 span;
+    max-width: 360px;
+    @media(max-width: 991px){
+      grid-column: 6 span;
+    }
+    @media(max-width: 575px){
+      grid-column: 12 span;
+    }
+  }
+}
+.yearsName {
+  white-space: nowrap;
+  @media(max-width: 767px){
+    width: 200px;   
+    white-space: unset;
+    min-width: 100px;
+  }
+}

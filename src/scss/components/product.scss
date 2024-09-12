@@ -1,0 +1,144 @@
+.product {
+  &Title {
+    margin-bottom: 32px;
+
+    @media(max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &Slider {
+    &W {
+      @media(max-width: 575px) {
+        margin-left: -16px;
+        margin-right: -16px;
+      }
+    }
+  }
+
+  &Slide {
+    img {
+      height: 520px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+
+      @media(max-width: 1400px) {
+        height: 450px;
+      }
+
+      @media(max-width: 1199px) {
+        height: 350px;
+      }
+
+      @media(max-width: 991px) {
+        height: 450px;
+      }
+
+      @media(max-width: 767px) {
+        height: 350px;
+      }
+
+      @media(max-width: 575px) {
+        height: 80vw;
+      }
+    }
+  }
+}
+
+.productSliderNav {
+  @media(max-width: 575px){
+    display: none;
+  }
+  .navArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &.swiper-button-disabled {
+      cursor: pointer;
+      opacity: .4;
+      pointer-events: unset;
+    }
+
+    svg {
+      stroke: #fff;
+    }
+
+    &Prev {
+      left: 16px;
+    }
+
+    &Next {
+      right: 16px;
+    }
+  }
+}
+
+.productThumb {
+  &Slider {
+    margin-top: 15px;
+    padding-right: 65px;
+
+    @media(max-width: 1199px) {
+      margin-top: 10px;
+    }
+    @media(max-width: 575px){
+      margin-top: 8px;
+    }
+  }
+
+  &Slide {
+    cursor: pointer;
+    &.swiper-slide-thumb-active {
+      opacity: .3;
+    }
+
+    img {
+      height: 75px;
+      width: 100%;
+      object-fit: cover;
+
+      @media(max-width: 1400px) {
+        height: 65px;
+      }
+
+      @media(max-width: 1199px) {
+        height: 60px;
+      }
+
+      @media(max-width: 991px) {
+        height: 80px;
+      }
+
+      @media(max-width: 767px) {
+        height: 65px;
+      }
+
+      @media(max-width: 575px) {
+        height: 13vw;
+      }
+    }
+  }
+}
+
+.productSect {
+  overflow: hidden;
+}
+.auctionImg{
+  width: fit-content;
+  border-radius: 4px;
+}
+.productTotalName {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  @media(max-width: 1400px){
+    font-size: 17px;
+    line-height: 24px;
+  }
+  @media(max-width: 767px){
+    font-size: 16px;
+  }
+}

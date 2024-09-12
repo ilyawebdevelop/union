@@ -1,0 +1,145 @@
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #000;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--gray4);
+}
+.accordion-button:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  background-color: transparent;
+}
+
+.accordion-button {
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid var(--gray4);
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  background-color: transparent;
+  @media(max-width: 991px){
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#accordion_1 {
+  padding-right: 30px;
+  @media(max-width: 991px){
+    padding-right: 0;
+  }
+}
+#accordion_2 {
+  padding-left: 30px;
+  @media(max-width: 991px){
+    padding-left: 0;
+  }
+}
+.accordion-steps {
+  .accordion-button {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-size: 18px;
+    align-items: flex-start;
+    @media(max-width: 1400px){
+      font-size: 17px;
+      line-height: normal;
+    }
+    &::after {
+      margin-top: 12px;
+      @media(max-width: 1400px){
+        margin-top: 9px;
+      }
+    }
+  
+    img {
+      width: 48px;
+    }
+  }
+  .accordion-item {
+    background-color: #FAFAFA;
+    padding: 24px 32px;
+    margin-bottom: 16px;
+    @media(max-width: 1400px){
+     padding: 20px 25px; 
+    }
+    @media(max-width: 991px){
+      margin-bottom: 8px;
+    }
+    &--disabled {
+      .accordion-button {
+        color: none;
+        pointer-events: none;   
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .accordion-body {
+    padding-left: 30px;
+    @media(max-width: 575px){
+     padding-left: 23px; 
+    }
+    ul {
+      li {
+        position: relative;
+        margin-bottom: 12px;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: -30px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: var(--blue);
+          @media(max-width: 575px){
+            left: -23px;
+          }
+        }
+        &:not(:last-child){
+          &::after {
+            content: '';
+            position: absolute;
+            left: -26px;
+            height: calc(100% - 4px);
+            width: 2px;
+            top: 21px;
+            background-color: var(--blue);
+            @media(max-width: 575px){
+              left: -19px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.filter {
+  &Nav {
+    border: 1px solid var(--gray3);
+    border-radius: 8px;
+    width: fit-content;
+    ul {
+      li {
+        &.active {
+          a {
+            background-color: var(--blue);
+            color: #fff;
+          }
+        }
+
+        a {
+          width: 240px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          height: 56px;
+          font-size: 20px;
+          line-height: 140%;
+          transition: background-color .2s linear, color .2s linear;
+          font-weight: 500;
+
+          &:hover {
+            background-color: var(--blue);
+            color: #fff;
+          }
+
+          img {
+            width: 24px;
+          }
+        }
+      }
+    }
+    &--gray {
+      ul {
+        li {
+          a {
+            &:hover {
+              background-color: var(--gray2);
+              color: var(--black);
+            }
+          }
+          &.active {
+            a {
+              background-color: var(--gray2);
+              color: var(--black);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &Content {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    @media(max-width: 991px){
+      margin-bottom: 24px;
+    }
+
+    @media(max-width: 991px) {
+      margin-top: 0;
+    }
+
+    &.fields-hide-lg {
+      .inputW-lg-hide {
+        display: none;
+      }
+
+      .filterBtnHide {
+        span {
+          &:nth-child(1) {
+            display: none;
+          }
+
+          &:nth-child(2) {
+            display: block;
+          }
+        }
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &.active {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      left: 0;
+      top: 0;
+      background-color: #fff;
+      z-index: 1;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 80px;
+      padding-top: 40px;
+      -webkit-animation: shows 0.2s;
+      animation: shows 0.2s;
+
+      .sortW {
+        display: block;
+      }
+
+      .filterBtnCallContent {
+        display: none;
+      }
+
+      .resetBtn {
+        display: flex;
+      }
+
+      .inputW-sm-hide {
+        display: block;
+      }
+    }
+
+    .sortW {
+      display: none;
+    }
+
+    .inputW-sm-hide {
+      @media(max-width: 991px) {
+        display: none;
+      }
+    }
+
+    .resetBtn {
+      @media(max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+
+  &Action {
+    .button {
+      width: 200px;
+
+      @media(max-width: 991px) {
+        width: 100%;
+      }
+    }
+
+    .btnW {
+      @media(max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
+}

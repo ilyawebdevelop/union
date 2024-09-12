@@ -16149,7 +16149,7 @@ a.color-blue-hover-black:hover {
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
-    z-index: 3;
+    z-index: 4;
     background-color: #fff;
     left: 0;
     top: 0;
@@ -16272,7 +16272,7 @@ a.color-blue-hover-black:hover {
 }
 .intro .container {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .intro.linear--black {
   background-size: 80%;
@@ -17862,6 +17862,11 @@ a.color-blue-hover-black:hover {
   padding-top: 60px;
   padding-bottom: 40px;
 }
+@media (max-width: 991px) {
+  .footer {
+    padding-bottom: 100px;
+  }
+}
 .footerNav ul li {
   margin-bottom: 12px;
 }
@@ -17962,4 +17967,45 @@ a.color-blue-hover-black:hover {
   .navFixed {
     display: none;
   }
+}
+
+.navBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+  padding: 10px 16px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+}
+@media (max-width: 991px) {
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+}
+.navBarLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  width: 100px;
+}
+.navBarLink:hover .navBarIcon {
+  stroke: var(--blue);
+}
+.navBarIcon {
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+  stroke: var(--black);
+  stroke-width: 1.5px;
+  transition: stroke 0.2s linear;
+}
+.navBarText {
+  font-size: 9px;
+  line-height: 10px;
+  font-weight: 500;
 }

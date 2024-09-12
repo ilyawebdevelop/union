@@ -1,0 +1,321 @@
+.carLogo {
+  border: 1px solid var(--gray3);
+  min-width: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  height: 56px;
+  transition: background-color .2s linear;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: var(--gray2);
+  }
+
+  &--array {
+    background-color: var(--gray2);
+    border: none;
+  }
+}
+
+.catalog {
+  &Slider {
+    margin-top: 40px;
+    overflow: visible;
+
+    @media(max-width: 991px) {
+      margin-top: 32px;
+    }
+
+    @media(max-width: 575px) {
+      padding-right: 40px;
+    }
+
+    &W {
+      overflow: hidden;
+    }
+
+    &Three {
+      overflow: visible;
+
+      @media(max-width: 575px) {
+        padding-right: 40px;
+      }
+    }
+  }
+
+  &Slide {
+    height: auto;
+
+    .catalogCard {
+      height: 100%;
+    }
+  }
+
+  &Card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    &Img {
+      &.catalogCardImg--305 {
+        img {
+          height: 305px;
+
+          @media(max-width: 1400px) {
+            height: 225px;
+          }
+
+          @media(max-width: 767px) {
+            height: 350px;
+          }
+
+          @media(max-width: 575px) {
+            height: 75vw;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        transition: opacity .2s linear;
+
+        @media(max-width: 767px) {
+          height: 350px;
+        }
+
+        @media(max-width: 575px) {
+          height: 55vw;
+        }
+
+        &:hover {
+          opacity: .9;
+        }
+      }
+    }
+
+    &Title {
+      transition: color .2s linear;
+
+      &:hover {
+        color: var(--blue);
+      }
+    }
+
+    &Content {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+
+      &.bg--white {
+        @media(max-width: 575px) {
+          background-color: transparent;
+          padding-left: 0 !important;
+        }
+      }
+    }
+
+    &Price {
+      &--main {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.catLogoW {
+  max-width: calc(100% - 140px);
+  &--border-gray {
+    border: 1px solid #E8E8E8;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .carLogo {
+    border: none;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.catalogSect {
+  @media(max-width: 575px) {
+    padding-top: 16px;
+  }
+
+  .sortW {
+    // margin-top: 60px;
+  }
+}
+
+.sortLink {
+  transition: color .2s linear;
+  color: var(--gray5);
+
+  &:hover {
+    color: var(--blue);
+
+    svg {
+      stroke: var(--blue);
+      fill: var(--blue);
+    }
+  }
+
+  &.active {
+    color: var(--blue);
+
+    svg {
+      stroke: var(--blue);
+      fill: var(--blue);
+    }
+  }
+
+  svg {
+    stroke: var(--gray5);
+    fill: var(--gray5);
+    width: 24px;
+    height: 24px;
+    stroke-width: 2px;
+    transition: fill .2s linear, stroke .2s linear;
+  }
+}
+
+.catalogGrid {
+  .catalogCardW {
+    &:nth-child(odd) {
+      @media(max-width: 991px) {
+        padding-right: 7px;
+      }
+    }
+
+    &:nth-child(even) {
+      @media(max-width: 991px) {
+        padding-left: 7px;
+      }
+    }
+  }
+
+  .catalogCard {
+    height: 100%;
+
+    .catalogCardTitle {
+      @media(max-width: 991px) {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+
+    .catalogCardContent {
+      @media(max-width: 991px) {
+        padding: 8px !important;
+      }
+    }
+
+    .catalogCardPrice--main {
+      @media(max-width: 991px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+
+    .caption {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .catalogCardImg img {
+      @media(max-width: 767px) {
+        height: 200px;
+      }
+
+      @media(max-width: 575px) {
+        height: 35vw;
+      }
+    }
+  }
+}
+
+.chinaCars {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  @media(max-width: 991px){
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    position: relative;
+    padding-bottom: 80px;
+    padding-top: 60px;
+    @media(max-width: 991px){
+      padding-top: 50px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: -88px;
+      background: url('@img/china/flag.png') no-repeat center center /contain;
+      width: 780px;
+      height: 580px;
+      @media(max-width: 767px){
+        width: 400px;
+        height: 200px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.chinaCard {
+  .h3 {
+    transition: opacity .2s linear;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &Img {
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: opacity .2s linear;
+      @media(max-width: 1199px){
+        height: 300px;
+      }
+      @media(max-width: 575px){
+        height: 55vw;
+      }
+
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+
+  &Text {
+    padding-right: 24px;
+    &.fw-medium {
+      @media(max-width: 991px){
+        font-weight: 400!important;
+      }
+    }
+    @media(max-width: 991px){
+      font-size: 16px;
+      line-height: 24px; 
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.contacts {
+  &City {
+    &Item {
+      width: fit-content;
+      padding-right: 65px;
+      background: url('@img/admin/contacts/2gis.svg') no-repeat right bottom 7px / 49px;
+      transition: color .2s linear;
+      &:hover {
+        color: var(--blue);
+      }
+    }
+  }
+  &Phone {
+    padding-left: 44px;
+    background: url('@img/icons/phone-blue.svg') no-repeat left center / 32px;
+    transition: color .2s linear;
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
+.contactsSocials{
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}

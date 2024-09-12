@@ -1,0 +1,59 @@
+.adv {
+  &List {
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
+    background: var(--gray1);
+    border: 1px solid var(--gray3);
+    border-radius: 4px;
+    padding: 32px 70px;
+    position: relative;
+    z-index: 1;
+    @media(max-width: 991px){
+      box-shadow: none;
+      background: none;
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    @media(max-width: 767px){
+      padding-left: 40px; 
+      padding-right: 40px;
+     }
+    @media(max-width: 575px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  }
+  &Item {
+    line-height: 125%;
+    @media(max-width: 991px){
+      box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
+      background: var(--gray1);
+      border: 1px solid var(--gray3);
+      border-radius: 4px;
+      padding: 24px 24px 24px 16px;
+
+    }
+    &Text {
+      max-width: 280px;
+      @media(max-width: 991px){
+        font-size: 14px;
+        line-height: 143%;
+      }
+    }
+  }
+  &--margin {
+    margin-top: -50px;
+    position: relative;
+    z-index: 0;
+  }
+}
+.advGruz{
+
+}
+.advGruzItem {
+
+  &Descr {
+    max-width: 280px;
+  }
+}

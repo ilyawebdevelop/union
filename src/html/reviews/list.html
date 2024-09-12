@@ -1,0 +1,75 @@
+<section class="sect pt-2">
+  <div class="container">
+    <div
+      class="d-flex align-items-start align-items-sm-center justify-content-between flex-wrap flex-column flex-sm-row gap-4">
+      <h1 class="h1 mb-0">Отзывы наших клиентов</h1>
+      <button class="button button--transparent button-sm-100">
+        Оставить отзыв
+      </button>
+    </div>
+    <div class="justify-content-between sortW d-flex reviewsContent flex-wrap">
+      <div class="d-flex align-items-center gap-2 gap-lg-4 flex-column flex-lg-row sortSmW">
+        <select name="istochnik" id="istochnik" class="formSelect">
+          <option value="istochnik_1">
+            Источник 1
+          </option>
+          <option value="istochnik_2">
+            Источник 2
+          </option>
+        </select>
+        <select name="sort" id="sort" class="formSelect d-block d-lg-none">
+          <option value="sort_1">
+            Сначала новые
+          </option>
+          <option value="sort_2">
+            По убыванию
+          </option>
+        </select>
+        <button class="button button--blue d-flex d-lg-none w-100">
+          Показать 186 отзывов
+        </button>
+        <span class="h4 color-gray5 text-nowrap d-none d-lg-block">186 авто</span>
+      </div>
+      <div class="d-none d-lg-flex align-items-center gap-4">
+        <span class="h4">Сортировка:</span>
+        <a class="sortLink active d-flex gap-2 align-items-center" href="#">
+          <span class="h4 mb-0">По цене</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#sort"></use>
+          </svg>
+        </a>
+        <a class="sortLink d-flex gap-2 align-items-center" href="#">
+          <span class="h4 mb-0">По оценке</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#sort"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="row mt-3 reviewsPage">
+      <div class="col-md-6 col-xl-4 mb-3 mb-lg-4">
+        @@include('reviews-card-1.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-3 mb-lg-4">
+        @@include('reviews-card-2.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-3 mb-lg-4">
+        @@include('reviews-card-3.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-3 mb-lg-4">
+        @@include('reviews-card-1.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-3 mb-lg-4">
+        @@include('reviews-card-2.html',{})
+      </div>
+      <div class="col-md-6 col-xl-4 mb-3 mb-lg-4">
+        @@include('reviews-card-3.html',{})
+      </div>
+    </div>
+    <div class="mt-0 mt-lg-3">
+      @@include('../pagination.html',{})
+    </div>
+
+  </div>
+</section>

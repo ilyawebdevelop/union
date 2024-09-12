@@ -1,0 +1,78 @@
+<section class="catalogSliderW sect">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap sectHead">
+      <div class="d-flex align-items-start gap-2 gap-lg-3">
+        <img src="@img/admin/flag/gruz.png" alt="flag" class="title-flag">
+        <h2 class="h2 title-flag-h2">Каталог спецтехники и грузовых автомобилей</h2>
+      </div>
+      <a href="#" class="d-none d-lg-flex button button--blue gap-2">
+        Каталог
+        <img src="@img/icons/btn-arrow-white.svg" alt="arrow">
+      </a>
+    </div><!-- /sectHead -->
+
+    <div class="d-none d-lg-flex align-items-end justify-content-between flex-wrap gap-3">
+
+      <div class="d-flex gap-2 flex-wrap catLogoW">
+        <a class="carLogo carLogo--array" href="#">
+          Все
+        </a>
+        <a class="carLogo px-4 gap-3" href="#">
+          <img src="@img/admin/brand/dozer.svg" alt="logo">
+          Тяжелая строительная техника
+        </a>
+        <a class="carLogo px-4 gap-3" href="#">
+          <img src="@img/admin/brand/compressor.svg" alt="logo">
+          Промышленное оборудование
+        </a>
+        <a class="carLogo px-4 gap-3" href="#">
+          <img src="@img/admin/brand/combine.svg" alt="logo">
+          Сельхозтехника
+        </a>
+        <a class="carLogo px-4 gap-3" href="#">
+          <img src="@img/admin/brand/truck.svg" alt="logo">
+          Грузовики, автобусы
+        </a>
+        <a class="carLogo px-4 gap-3" href="#">
+          <img src="@img/admin/brand/roller.svg" alt="logo">
+          Дорожная техника
+        </a>     
+      </div><!-- /brand-cats -->
+
+      <div class="sliderNav gap-2">
+        @@include('../components/slider-nav.html',{})
+      </div><!-- /sliderNav -->
+
+    </div>
+
+    <div class="swiper catalogSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-gruz.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-gruz.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-gruz.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-gruz.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-gruz.html',{})
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          @@include('../catalog/catalog-card-gruz.html',{})
+        </div><!-- /catalogSlide -->
+
+      </div>
+    </div>
+    <a href="#" class="d-flex d-lg-none button button--blue gap-2 mt-4 catalogBtn">
+      Перейти в каталог
+      <img src="@img/icons/btn-arrow-white.svg" alt="arrow">
+    </a>
+
+  </div>
+</section>

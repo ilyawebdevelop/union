@@ -1,0 +1,34 @@
+<section class="reviews sect reviewsSliderW">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center sectHead">
+      <h2 class="h2 reviewsTitle pb-2 border-b-gray-4">Отзывы</h2>
+      <div class="sliderNav gap-2 d-none d-lg-flex">
+        @@include('components/slider-nav.html',{})
+      </div><!-- /sliderNav -->
+    </div>
+
+    <div class="swiper reviewsSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide reviewsSlide">
+          @@include('reviews/reviews-card-1.html',{})
+        </div><!-- /reviewsSlide -->
+        <div class="swiper-slide reviewsSlide">
+          @@include('reviews/reviews-card-2.html',{})
+        </div><!-- /reviewsSlide -->
+        <div class="swiper-slide reviewsSlide">
+          @@include('reviews/reviews-card-3.html',{})
+        </div><!-- /reviewsSlide -->
+        <div class="swiper-slide reviewsSlide">
+          @@include('reviews/reviews-card-1.html',{})
+        </div><!-- /reviewsSlide -->
+        <div class="swiper-slide reviewsSlide">
+          @@include('reviews/reviews-card-2.html',{})
+        </div><!-- /reviewsSlide -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
