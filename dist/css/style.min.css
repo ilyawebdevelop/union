@@ -14081,7 +14081,7 @@ textarea.form-control-lg {
   --dark-blue: #020094;
   --white: #fff;
   --gray5: #666;
-  --gray4: #22215a;
+  --gray4: #AEAEAE;
   --gray3: #e8e8e8;
   --gray2: #f1f1f1;
   --gray1: #fafafa;
@@ -16036,7 +16036,7 @@ a.color-blue-hover-black:hover {
   left: 0;
   top: 0;
   background-color: #fff;
-  z-index: 1;
+  z-index: 3;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 80px;
