@@ -16350,7 +16350,7 @@ a.color-blue-hover-black:hover {
 }
 @media (max-width: 991px) {
   .intro.min-h-unset .container {
-    padding-bottom: 240px;
+    padding-bottom: 200px;
   }
 }
 .intro::before {
