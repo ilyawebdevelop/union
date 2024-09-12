@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Карточка спецтехника</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="headerW d-flex align-items-center justify-content-between flex-row flex-lg-column flex-xl-row gap-2">
+      <a href="#" class="headerLogo logo">
+        <img src="img/admin/logo/logo.png" alt="logo">
+      </a>
+      <nav class="headerNav nav">
+        <div class="container">
+          <div class="d-flex py-2 d-lg-none justify-content-between align-items-center border-b-gray-3 px-3">
+            <a href="#" class="headerLogo logo">
+              <img src="img/admin/logo/logo.png" alt="logo">
+            </a>
+            <div class="headerNavCloseBtn"><img src="img/icons/close.svg" alt="close"></div>
+          </div>
+          <ul class="navList gap-0 gap-lg-3 gap-xxl-4">
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Услуги</a>
+            </li>
+            <li>
+              <a href="#">Компания</a>
+            </li>
+            <li>
+              <a href="#">Отзывы</a>
+            </li>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="d-flex d-lg-none justify-content-between align-items-center gap-2 px-3 py-4">
+            <div class="d-flex flex-column gap-2">
+              <span class="fw-medium text--sm">Мы в соцсетях:</span>
+              <ul class="d-flex gap-3 socials socials--black">
+                <li>
+                  <a href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#insta"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <span class="fw-medium text--sm">Свяжитесь с нами:</span>
+              <ul class="d-flex gap-3 socials">
+                <li>
+                  <a href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#vk-call"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#whatsapp-call"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#telegram-call"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex d-lg-none gap-1 px-3 mt-2">
+            <img src="img/icons/phone.svg" alt="phone">
+            <div class="headerContacts d-flex flex-column">
+              <a href="tel:88006007966" class="headerPhone headerPhone--lg">8 800 600-79-66</a>
+              <span>Звонок по России бесплатно</span>
+            </div><!-- /headerContacts -->
+          </div>       
+          <div class="d-flex d-lg-none px-3 pt-2 mt-4">
+            <button class="button button--blue w-100" data-src="#modalOrder" data-fancybox>
+              Задать вопрос консультанту
+            </button>
+          </div>
+  
+        </div>
+  
+      </nav>
+      <div class="d-none d-lg-flex gap-1">
+        <img src="img/icons/phone.svg" alt="phone">
+        <div class="headerContacts d-flex flex-column">
+          <a href="tel:88006007966" class="headerPhone">8 800 600-79-66</a>
+          <span>Звонок по России бесплатно</span>
+        </div><!-- /headerContacts -->
+      </div>
+      <ul class="d-none d-xxl-flex gap-2 socials socials--black headerSocials">
+        <li>
+          <a href="#" target="_blank">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#insta"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
+  
+      <button class="button button--blue d-none d-lg-flex">Задать вопрос</button>
+    </div>
+  </div>
+
+
+
+</header>
+		<main class="main">		
+			<div class="breadcrumbsW pb-4 pt-4">
+  <div class="container">
+    <div class="breadcrumbs d-flex gap-2 mb-0">
+      <a href="#">Главная</a>
+      <span class="sep">/</span>
+      <a href="#">Автомобили из Японии</a>
+      <span class="sep">/</span>
+      <span class="bread-current">Автомобиль из Японии</span>
+    </div>
+  </div>
+</div>
+
+			<section class="sect pt-0 productSect">
+  <div class="container">
+    <h1 class="h1 productTitle">Daewoo Novus, манипулятор, ДВС 11 000 сс, 2009</h1>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="productSliderW">
+          <div class="swiper productSlider">
+            <div class="swiper-wrapper">
+  
+              <a class="swiper-slide productSlide" data-fancybox="gallery" href="img/admin/product/image-6.png">
+                <img src="img/admin/product/image-6.png" alt="image">
+              </a><!-- /finishedPhotoSlide -->
+  
+              <a class="swiper-slide productSlide" data-fancybox="gallery" href="img/admin/product/image-2.png">
+                <img src="img/admin/product/image-2.png" alt="image">
+              </a><!-- /finishedPhotoSlide -->
+  
+              <a class="swiper-slide productSlide" data-fancybox="gallery" href="img/admin/product/image-3.png">
+                <img src="img/admin/product/image-3.png" alt="image">
+              </a><!-- /finishedPhotoSlide -->
+  
+              <a class="swiper-slide productSlide" data-fancybox="gallery" href="img/admin/product/image-4.png">
+                <img src="img/admin/product/image-4.png" alt="image">
+              </a><!-- /finishedPhotoSlide -->
+  
+              <a class="swiper-slide productSlide" data-fancybox="gallery" href="img/admin/product/image-1.png">
+                <img src="img/admin/product/image-1.png" alt="image">
+              </a><!-- /finishedPhotoSlide -->
+  
+              <a class="swiper-slide productSlide" data-fancybox="gallery" href="img/admin/product/image-2.png">
+                <img src="img/admin/product/image-2.png" alt="image">
+              </a><!-- /finishedPhotoSlide -->
+  
+            </div>
+            <div class="productSliderNav">
+              <button class="navArrow navArrowPrev">
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+  </svg>
+</button>
+<button class="navArrow navArrowNext">
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+  </svg>
+</button>
+            </div>
+          </div>
+          <div class="swiper productThumbSlider">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide productThumbSlide">
+                <img src="img/admin/product/image-6.png" alt="image">
+              </div><!-- /finishedPhotoThumbSlide -->
+  
+              <div class="swiper-slide productThumbSlide">
+                <img src="img/admin/product/image-2.png" alt="image">
+              </div><!-- /finishedPhotoThumbSlide -->
+  
+              <div class="swiper-slide productThumbSlide">
+                <img src="img/admin/product/image-3.png" alt="image">
+              </div><!-- /finishedPhotoThumbSlide -->
+  
+              <div class="swiper-slide productThumbSlide">
+                <img src="img/admin/product/image-4.png" alt="image">
+              </div><!-- /finishedPhotoThumbSlide -->
+  
+              <div class="swiper-slide productThumbSlide">
+                <img src="img/admin/product/image-1.png" alt="image">
+              </div><!-- /finishedPhotoThumbSlide -->
+  
+              <div class="swiper-slide productThumbSlide">
+                <img src="img/admin/product/image-2.png" alt="image">
+              </div><!-- /finishedPhotoThumbSlide -->
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-2 mt-lg-0">
+        <div class="board bg--gray1">
+          <div class="paramList pb-4 paramList--border-b">
+
+            <div class="paramItem">
+              <div class="paramItemName">Год выпуска</div>             
+              <div class="paramItemText">2009 г.</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Пробег</div>            
+              <div class="paramItemText">
+                30 000 км</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Кузов</div>             
+              <div class="paramItemText">GF8W</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Оценка</div>             
+              <div class="paramItemText">RA</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Объем двигателя</div>             
+              <div class="paramItemText">2500 см³</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Мощность</div>             
+              <div class="paramItemText">184 л.с</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Привод</div>            
+              <div class="paramItemText">FULLTIME4WD</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Трансмиссия</div>          
+              <div class="paramItemText">FAT</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Комплектация</div>             
+              <div class="paramItemText">24G Navi PKG 4WD</div>
+            </div><!-- /paramItem -->
+
+          </div>
+          <div class="paramList py-4 paramList--border-b">
+
+            <div class="paramItem">
+              <div class="paramItemName">Город</div>            
+              <div class="paramItemText">TAA Yokohama</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Дата аукциона</div>            
+              <div class="paramItemText">
+                -</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Лот</div>           
+              <div class="paramItemText">80044</div>
+            </div><!-- /paramItem -->
+            <div class="paramItem">
+              <div class="paramItemName">Статус</div>          
+              <div class="paramItemText"></div>
+            </div><!-- /paramItem -->
+
+          </div>
+          <div class="d-flex align-items-center pt-4 gap-4 flex-wrap justify-content-between">
+            <div class="d-block">
+              <span class="h5 h5--mobile color-gray5">Стартовая цена на аукционе</span>
+              <div class="catalogCardPrice d-flex flex-wrap align-items-center gap-1 mt-1">
+                <span class="catalogCardPrice--main">6 900 000 ¥</span>
+                <span class="catalogCardPrice--second caption">~6 700 000 ₽</span>
+              </div><!-- /catalogCardPrice -->
+            </div>
+            <button class="button button--red productBtn">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="sect py-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-xl-8">
+
+        <div class="tabs productTabs" data-tabs="popup">
+          <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-3">
+            <h3 class="h3 fw-semibold mb-0">Описание лота</h3>
+            <ul class="tabs__nav gap-2">
+              <li class="tabs__nav-item">
+                <button class="tabs__nav-btn gap-2" type="button">
+                  <img src="img/icons/lang.svg" alt="">
+                  Перевод
+                </button>
+              </li>
+              <li class="tabs__nav-item">
+                <button class="tabs__nav-btn" type="button">           
+                  Язык оригинала
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tabs__content">
+            <div class="tabs__panel p-0">
+              <div class="board bg--gray1 pb-4">
+                <div class="paramList pb-3">      
+                  <div class="paramItem">
+                    <div class="paramItemName">А1</div>
+                    <div class="paramItemText">Мелкая царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">A2</div>
+                    <div class="paramItemText">Царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">A3</div>
+                    <div class="paramItemText">Большая Царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">E1</div>
+                    <div class="paramItemText">Небольшая Вмятина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">W2</div>
+                    <div class="paramItemText">РеРемонт/Покраска (заметные)монт/Покраска (едва обнаружимые)</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">А1</div>
+                    <div class="paramItemText">Мелкая царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">A2</div>
+                    <div class="paramItemText">Царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">A3</div>
+                    <div class="paramItemText">Большая Царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">E1</div>
+                    <div class="paramItemText">Небольшая Вмятина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">W2</div>
+                    <div class="paramItemText">РеРемонт/Покраска (заметные)монт/Покраска (едва обнаружимые)</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">А1</div>
+                    <div class="paramItemText">Мелкая царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">A2</div>
+                    <div class="paramItemText">Царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">A3</div>
+                    <div class="paramItemText">Большая Царапина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">E1</div>
+                    <div class="paramItemText">Небольшая Вмятина</div>
+                  </div><!-- /paramItem -->
+                  <div class="paramItem">
+                    <div class="paramItemName">W2</div>
+                    <div class="paramItemText">РеРемонт/Покраска (заметные)монт/Покраска (едва обнаружимые)</div>
+                  </div><!-- /paramItem -->      
+                </div>
+          
+              </div>
+            </div>
+            <div class="tabs__panel p-0">
+              <div class="board board--content bg--gray1 mb-2">
+                <div class="content content--h5">
+                  <p>
+                    Текст на корейском языке
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-5 col-xl-4 mt-5 mt-lg-0">
+        <h3 class="h3 fw-semibold mb-4">Порядок работы</h3>
+
+        <div class="accordion accordion-steps" id="accordion-steps">
+          <div class="accordion-item">
+            <h4 class="accordion-header h4" id="heading_1">
+              <button class="accordion-button collapsed d-flex gap-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+                <img src="img/icons/step-1.svg" alt="step-icon">
+                <div class="d-flex gap-2 pt-2">
+                  <span>1.</span>
+                  Покупка автомобиля
+                </div>
+              </button>
+            </h4>
+            <div id="collapse_1" class="accordion-collapse collapse" aria-labelledby="heading_1"
+              data-bs-parent="#accordion-steps">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <strong>Заключаем с вами договор</strong> на услуги по подбору, помощи при покупке, доставке и
+                    таможенном оформлении.
+                  </li>
+                  <li>
+                    <strong>Вносите предоплату</strong> за услуги (гарантийный платеж)
+                  </li>
+                  <li>
+                    <strong>Менеджер консультирует</strong> по выбранному вами лоту или подбирает лот под ваш запрос.
+                  </li>
+                  <li>
+                    <strong>Торгуем на аукционе</strong> и пробуем выкупить понравившейся вам лот. Если выкупить не
+                    получилось (ставка
+                    превысила желаемую сумму или аукцион не состоялся), то подбираем другой вариант, либо ждем повторных
+                    торгов по лоту.
+                  </li>
+                  <li>
+                    <strong>Оплачиваете инвойс</strong> (счет, выставленный продавцом), который включает в себя
+                    стоимость авто, расходы
+                    по Японии (хранение и транспортировка), расходы на перевозку по морю.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_2">
+              <button class="accordion-button collapsed d-flex gap-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                <img src="img/icons/step-2.svg" alt="step-icon">
+                <div class="d-flex gap-2 pt-2">
+                  <span>2.</span>
+                  Доставка во Владивосток
+                </div>
+              </button>
+            </h2>
+            <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2"
+              data-bs-parent="#accordion-steps">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <strong>Контролируем процесс перевозки</strong>
+                  </li>
+                  <li>
+                    <strong>Сопровождаем при прохождении таможни </strong> и оформлении всех необходимых документов
+                  </li>
+                  <li>
+                    <strong>Оплачиваете остаток</strong> по договору.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item accordion-item--disabled">
+            <h2 class="accordion-header" id="heading_3">
+              <button class="accordion-button collapsed d-flex gap-3" type="button">
+                <img src="img/icons/step-3.svg" alt="step-icon">
+                <div class="d-flex gap-2 pt-2">
+                  <span>3.</span>
+                  Передаем вам автомобиль или Отправляем его в ваш регион.
+                </div>
+              </button>
+            </h2>
+          </div>
+        </div><!-- /accordion-steps -->
+
+        <div class="warning mt-4">
+          <div class="warningTitle d-flex align-items-center gap-2 mb-3">
+            <img src="img/icons/warn.png" alt="warn">
+            <div class="h4">Осторожно, мошенники!</div>
+          </div>
+          <div class="content">
+            <p>
+              В связи с большим спросом на услуги по доставке авто из-за рубежа, к сожалению, на этом рынке появляется
+              все больше мошеннических схем, в результате которых покупатели теряют свои деньги или все-таки покупают
+              автомобили, но с очень большими наценками. 
+            </p>
+            <p>
+              Мы собрали несколько советов, которые помогут вам избежать обмана.
+            </p>
+          </div>
+          <a class="color-blue color-blue-hover-black" href="#">Подробнее...</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>		
+			<section class="catalogSliderW sect">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center sectHead">
+      <h2 class="h2 reviewsTitle pb-2 border-b-gray-4">Подобные автомобили</h2>
+      <div class="sliderNav gap-2 d-none d-lg-flex">
+        <button class="navArrow navArrowPrev">
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+  </svg>
+</button>
+<button class="navArrow navArrowNext">
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+  </svg>
+</button>
+      </div><!-- /sliderNav -->
+    </div>
+
+    <div class="swiper catalogSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-1.jpg" alt="image">
+  </a>
+  <div class="catalogCardContent bg--gray1 p-4">
+    <div class="d-flex flex-column justify-content-between h-100">
+      <h5 class="catalogCardTitle"><a href="#">Mitsubishi Outlander, 2.5 л., 2021 </a></h5>
+      <div class="d-block">
+        <div class="catalogCardPrice d-flex flex-wrap align-items-center gap-1 my-3">
+          <span class="catalogCardPrice--main">1 200 000 ¥</span>
+          <span class="catalogCardPrice--second caption">~1 100 000 ₽</span>
+        </div><!-- /catalogCardPrice -->
+        <div class="d-flex gap-1 gap-lg-3 flex-wrap">
+          <span class="caption color-gray5">Лот 80044</span>
+          <span class="caption color-gray5">TAA Yokohama</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /catalogCard -->
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-2.jpg" alt="image">
+  </a>
+  <div class="catalogCardContent bg--gray1 p-4">
+    <div class="d-flex flex-column justify-content-between h-100">
+      <h5 class="catalogCardTitle"><a href="#">Toyota C-HR, 1.8 л., 2018</a></h5>
+      <div class="d-block">
+        <div class="catalogCardPrice d-flex flex-wrap align-items-center gap-1 my-3">
+          <span class="catalogCardPrice--main">1 350 000 ¥</span>
+          <span class="catalogCardPrice--second caption">~1 200 000 ₽</span>
+        </div><!-- /catalogCardPrice -->
+        <div class="d-flex gap-1 gap-lg-3 flex-wrap">
+          <span class="caption color-gray5">Лот 80044</span>
+          <span class="caption color-gray5">TAA Yokohama</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /catalogCard -->
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-1.jpg" alt="image">
+  </a>
+  <div class="catalogCardContent bg--gray1 p-4">
+    <div class="d-flex flex-column justify-content-between h-100">
+      <h5 class="catalogCardTitle"><a href="#">Mitsubishi Outlander, 2.5 л., 2021 </a></h5>
+      <div class="d-block">
+        <div class="catalogCardPrice d-flex flex-wrap align-items-center gap-1 my-3">
+          <span class="catalogCardPrice--main">1 200 000 ¥</span>
+          <span class="catalogCardPrice--second caption">~1 100 000 ₽</span>
+        </div><!-- /catalogCardPrice -->
+        <div class="d-flex gap-1 gap-lg-3 flex-wrap">
+          <span class="caption color-gray5">Лот 80044</span>
+          <span class="caption color-gray5">TAA Yokohama</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /catalogCard -->
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-2.jpg" alt="image">
+  </a>
+  <div class="catalogCardContent bg--gray1 p-4">
+    <div class="d-flex flex-column justify-content-between h-100">
+      <h5 class="catalogCardTitle"><a href="#">Toyota C-HR, 1.8 л., 2018</a></h5>
+      <div class="d-block">
+        <div class="catalogCardPrice d-flex flex-wrap align-items-center gap-1 my-3">
+          <span class="catalogCardPrice--main">1 350 000 ¥</span>
+          <span class="catalogCardPrice--second caption">~1 200 000 ₽</span>
+        </div><!-- /catalogCardPrice -->
+        <div class="d-flex gap-1 gap-lg-3 flex-wrap">
+          <span class="caption color-gray5">Лот 80044</span>
+          <span class="caption color-gray5">TAA Yokohama</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /catalogCard -->
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-1.jpg" alt="image">
+  </a>
+  <div class="catalogCardContent bg--gray1 p-4">
+    <div class="d-flex flex-column justify-content-between h-100">
+      <h5 class="catalogCardTitle"><a href="#">Mitsubishi Outlander, 2.5 л., 2021 </a></h5>
+      <div class="d-block">
+        <div class="catalogCardPrice d-flex flex-wrap align-items-center gap-1 my-3">
+          <span class="catalogCardPrice--main">1 200 000 ¥</span>
+          <span class="catalogCardPrice--second caption">~1 100 000 ₽</span>
+        </div><!-- /catalogCardPrice -->
+        <div class="d-flex gap-1 gap-lg-3 flex-wrap">
+          <span class="caption color-gray5">Лот 80044</span>
+          <span class="caption color-gray5">TAA Yokohama</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /catalogCard -->
+        </div><!-- /catalogSlide -->
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-2.jpg" alt="image">
+  </a>
+  <div class="catalogCardContent bg--gray1 p-4">
+    <div class="d-flex flex-column justify-content-between h-100">
+      <h5 class="catalogCardTitle"><a href="#">Toyota C-HR, 1.8 л., 2018</a></h5>
+      <div class="d-block">
+        <div class="catalogCardPrice d-flex flex-wrap align-items-center gap-1 my-3">
+          <span class="catalogCardPrice--main">1 350 000 ¥</span>
+          <span class="catalogCardPrice--second caption">~1 200 000 ₽</span>
+        </div><!-- /catalogCardPrice -->
+        <div class="d-flex gap-1 gap-lg-3 flex-wrap">
+          <span class="caption color-gray5">Лот 80044</span>
+          <span class="caption color-gray5">TAA Yokohama</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /catalogCard -->
+        </div><!-- /catalogSlide -->
+
+      </div>
+    </div>
+    <a href="#" class="d-flex d-lg-none button button--blue gap-2 mt-4 catalogBtn">
+      Перейти в каталог
+      <img src="img/icons/btn-arrow-white.svg" alt="arrow">
+    </a>
+
+  </div>
+</section>		
+			<section class="callback sect py-4 py-lg-0">
+  <div class="container">
+    <div class="callbackW">
+      <h2 class="h2 text--white sectHead callbackTitle">
+        Поможем подобрать подходящий вариант под ваш бюджет
+      </h2>
+      <form action="#" class="form">
+        <div class="row">
+          <div class="col-lg-5 mb-2 mb-lg-0">
+            <div class="inputW">
+              <input type="text" class="formInput" placeholder="Ваше имя">
+              <button class="clear" type="button"><img src="img/icons/clear.svg" alt="clear"></button>
+            </div>
+          </div>
+          <div class="col-lg-5 mb-2 mb-lg-0">
+            <div class="inputW">
+              <input type="tel" class="formInput" placeholder="Телефон">
+              <button class="clear" type="button"><img src="img/icons/clear.svg" alt="clear"></button>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <button class="button--blue button w-100">Отправить</button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <div class="agreement text--white">
+              Нажимая на кнопку “Отправить”, вы подтверждаете свое <a href="#" target="_blank">согласие на обработку
+                персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+      <section class="reviews sect reviewsSliderW">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center sectHead">
+      <h2 class="h2 reviewsTitle pb-2 border-b-gray-4">Отзывы</h2>
+      <div class="sliderNav gap-2 d-none d-lg-flex">
+        <button class="navArrow navArrowPrev">
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+  </svg>
+</button>
+<button class="navArrow navArrowNext">
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+  </svg>
+</button>
+      </div><!-- /sliderNav -->
+    </div>
+
+    <div class="swiper reviewsSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide reviewsSlide">
+          <!-- Отзыв с кнопкой подробнее, когда выпадает текст ниже -->
+<div class="reviewsCard cardText">
+  <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+    <div class="d-flex align-items-center gap-1">
+      <img src="img/icons/avatar.svg" alt="person" class="reviewsCardPersonIcon">
+      <div class="d-block">
+        <span class="fw-medium d-block text--lg">Анна В.</span>
+        <span class="fw-medium d-block text--15 color-gray5 ">19 июня 2024 г.</span>
+      </div>
+    </div>
+    <img src="img/admin/reviews/logo-1.png" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+  </div>
+  <div class="content content--hidden my-1">
+    <p>
+      Решил купить себе машину, но после неудачных поисков на «дром» решил заказать машину из Японии и не пожалел. Был
+      подобран один из лучших вариантов желаемой машины. От начала поисков машины и до заветного получения ключей
+      курировал менеджер Антон, грамотный, отзывчивый, позитивно настроенный специалист своего дела, который помогал с
+      любым вопросом.
+    </p>
+    <p>
+      Так же хотелось отметить логиста Ксению, которая так же помогала с доставкой авто, решением проблем переводов и
+      оплат счетов. Машина приехала с Японии быстро, без единых царапин(все как японец передал). Так же порадовало что в
+      салоне было все чистенько, повесили фирменную вонючку, с ключами был фирменный брелок(мелочь, но приятно), теперь
+      этот брелок будет напоминать о том от куда у меня появилась эта машина и какую работу проделала данная компания!
+    </p>
+  </div>
+  <img src="img/admin/reviews/logo-1.png" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+  <button class="button button--white mt-3 reviewsCardBtn js-show-more">Подробнее</button>
+</div><!-- /reviewsCard -->
+        </div><!-- /reviewsSlide -->
+        <div class="swiper-slide reviewsSlide">
+          <!-- Отзыв с кнопкой подробнее, когда выпадает модальное окно -->
+<div class="reviewsCard cardText">
+  <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+    <div class="d-flex align-items-center gap-1">
+      <img src="img/icons/avatar.svg" alt="person" class="reviewsCardPersonIcon">
+      <div class="d-block">
+        <span class="fw-medium d-block text--lg">Иннокентий В.</span>
+        <span class="fw-medium d-block text--15 color-gray5 ">25 июля 2024 г.</span>
+      </div>
+    </div>
+    <img src="img/admin/reviews/2gis.svg" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+  </div>
+  <div class="content my-1">
+    <p>
+      Решил купить себе машину, но после неудачных поисков на «дром» решил заказать машину из Японии и не пожалел. Был
+      подобран один из лучших вариантов желаемой машины. 
+    </p>
+    <p>
+      Так же хотелось отметить логиста Ксению, которая так же помогала с доставкой авто, решением проблем переводов и
+      оплат счетов. Машина приехала с Японии быстро, без единых царапин(все как японец передал). Так же порадовало что в
+      салоне было все чистенько, повесили фирменную вонючку, с ключами был фирменный брелок(мелочь, но приятно).
+    </p>
+  </div>
+  <img src="img/admin/reviews/2gis.svg" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+  <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews" data-fancybox>Подробнее</button>
+</div><!-- /reviewsCard -->
+        </div><!-- /reviewsSlide -->
+        <div class="swiper-slide reviewsSlide">
+          <!-- Отзыв с кнопкой подробнее, когда выпадает текст ниже -->
+<div class="reviewsCard cardText">
+  <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+    <div class="d-flex align-items-center gap-1">
+      <img src="img/icons/avatar.svg" alt="person" class="reviewsCardPersonIcon">
+      <div class="d-block">
+        <span class="fw-medium d-block text--lg">Вениамин П.</span>
+        <span class="fw-medium d-block text--15 color-gray5 ">03 июля 2024 г.</span>
+      </div>
+    </div>
+    <img src="img/admin/reviews/vl.svg" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+  </div>
+  <div class="content my-1">
+    <p>
+      Решил купить себе машину, но после неудачных поисков на «дром» решил заказать машину из Японии и не пожалел.
+    </p>
+    <p>
+      Так же хотелось отметить логиста Ксению, которая так же помогала с доставкой авто, решением проблем переводов и
+      оплат счетов. Машина приехала с Японии быстро, без единых царапин(все как японец передал).
+    </p>
+  </div>
+  <img src="img/admin/reviews/vl.svg" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+
+</div><!-- /reviewsCard -->
+        </div><!-- /reviewsSlide -->
+        <div class="swiper-slide reviewsSlide">
+          <!-- Отзыв с кнопкой подробнее, когда выпадает текст ниже -->
+<div class="reviewsCard cardText">
+  <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+    <div class="d-flex align-items-center gap-1">
+      <img src="img/icons/avatar.svg" alt="person" class="reviewsCardPersonIcon">
+      <div class="d-block">
+        <span class="fw-medium d-block text--lg">Анна В.</span>
+        <span class="fw-medium d-block text--15 color-gray5 ">19 июня 2024 г.</span>
+      </div>
+    </div>
+    <img src="img/admin/reviews/logo-1.png" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+  </div>
+  <div class="content content--hidden my-1">
+    <p>
+      Решил купить себе машину, но после неудачных поисков на «дром» решил заказать машину из Японии и не пожалел. Был
+      подобран один из лучших вариантов желаемой машины. От начала поисков машины и до заветного получения ключей
+      курировал менеджер Антон, грамотный, отзывчивый, позитивно настроенный специалист своего дела, который помогал с
+      любым вопросом.
+    </p>
+    <p>
+      Так же хотелось отметить логиста Ксению, которая так же помогала с доставкой авто, решением проблем переводов и
+      оплат счетов. Машина приехала с Японии быстро, без единых царапин(все как японец передал). Так же порадовало что в
+      салоне было все чистенько, повесили фирменную вонючку, с ключами был фирменный брелок(мелочь, но приятно), теперь
+      этот брелок будет напоминать о том от куда у меня появилась эта машина и какую работу проделала данная компания!
+    </p>
+  </div>
+  <img src="img/admin/reviews/logo-1.png" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+  <button class="button button--white mt-3 reviewsCardBtn js-show-more">Подробнее</button>
+</div><!-- /reviewsCard -->
+        </div><!-- /reviewsSlide -->
+        <div class="swiper-slide reviewsSlide">
+          <!-- Отзыв с кнопкой подробнее, когда выпадает модальное окно -->
+<div class="reviewsCard cardText">
+  <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+    <div class="d-flex align-items-center gap-1">
+      <img src="img/icons/avatar.svg" alt="person" class="reviewsCardPersonIcon">
+      <div class="d-block">
+        <span class="fw-medium d-block text--lg">Иннокентий В.</span>
+        <span class="fw-medium d-block text--15 color-gray5 ">25 июля 2024 г.</span>
+      </div>
+    </div>
+    <img src="img/admin/reviews/2gis.svg" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+  </div>
+  <div class="content my-1">
+    <p>
+      Решил купить себе машину, но после неудачных поисков на «дром» решил заказать машину из Японии и не пожалел. Был
+      подобран один из лучших вариантов желаемой машины. 
+    </p>
+    <p>
+      Так же хотелось отметить логиста Ксению, которая так же помогала с доставкой авто, решением проблем переводов и
+      оплат счетов. Машина приехала с Японии быстро, без единых царапин(все как японец передал). Так же порадовало что в
+      салоне было все чистенько, повесили фирменную вонючку, с ключами был фирменный брелок(мелочь, но приятно).
+    </p>
+  </div>
+  <img src="img/admin/reviews/2gis.svg" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+  <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews" data-fancybox>Подробнее</button>
+</div><!-- /reviewsCard -->
+        </div><!-- /reviewsSlide -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+      <section class="about sect">
+  <div class="aboutT">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="aboutContent">
+            <h2 class="h2 aboutTitle text--white border-b-gray-4 sectHead pb-2">О компании</h2>
+            <div class="content text--white mb-4">
+              <p class="text--lg">
+                С 2014 года предоставляем услуги по подбору, покупке и доставке любых автомобилей и спецтехники с
+                аукционов Японии, Кореи, Китая, США, ОАЭ и Европы.
+              </p>
+              <p>
+                Нам доверились уже более 10 000 клиентов с разных регионов России и стран СНГ. Среди наших клиентов -
+                физические, юридическим лица, а также крупные муниципальные организации. Благодаря работе нашей компании
+                только с проверенными аукционами и и перевозчиками, мы можем обеспечить нашим клиентам поставку
+                качественной техники по самым доступным ценам.
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-4 flex-wrap">
+              <a class="button button--blue" href="#">Привезенная техника</a>
+              <a class="text--link text--white text--lg fw-medium border-b-gray-4 pb-2 text--lg-sm-15" href="#">Контакты</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="aboutImgW" style="background-image: url('img/admin/about/image.png');">
+            <div class="d-flex gap-4 align-items-start align-items-lg-center justify-content-end flex-column-reverse flex-xl-row">
+              <a class="text--link text--white text--lg text--lg-sm-15 fw-medium border-b-gray-4 pb-2" href="#">Отзывы от реальных
+                покупателей</a>
+              <div class="d-flex gap-2">
+                <a href="#" target="_blank">
+                  <img src="img/admin/about/yandex.png" alt="yandex">
+                </a>
+                <a href="#" target="_blank">
+                  <img src="img/admin/about/2gis.png" alt="yandex">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="aboutB">
+    <div class="container">
+      <div class="aboutAdvW">
+        <div class="row sectHead">
+          <div class="col">
+            <div class="h3 text--white">
+              Преимущества работы с нами:
+            </div>
+          </div>
+        </div>
+        <div class="row aboutAdvList">
+          <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+            <ul class="list-interactive list-interactive--white text--white fw-medium">
+              <li class="mb-4">
+                <strong>Бесплатная консультация</strong> и&nbsp;просчёт стоимости
+              </li>
+              <li>
+                <strong>Фиксированная цена и&nbsp;сроки</strong> в&nbsp;договоре
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+            <ul class="list-interactive list-interactive--white text--white fw-medium">
+              <li class="mb-4">
+                <strong>Отчетные документы </strong> и&nbsp;информирование на&nbsp;каждом этапе
+              </li>
+              <li>
+                <strong>Полная проверка </strong> перед покупкой и&nbsp;отправкой
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <ul class="list-interactive list-interactive--white text--white fw-medium">
+              <li class="mb-4">
+                <strong>Решение любых вопросов</strong> с&nbsp;таможенным оформлением
+              </li>
+              <li>
+                <strong>Доставка в&nbsp;любой регион </strong> России и&nbsp;СНГ
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+			<section class="sect">
+  <div class="container">
+    <h2 class="h2 sectHead">
+      Каталог автомобилей с аукционов Японии
+    </h2>
+    <div class="content">
+      <p>
+        Компания «Юнион Авто» предоставляет услуги по подбору, покупке и доставке любых автомобилей и спецтехники с
+        аукционов Японии, Кореи, Китая, США, ОАЭ и Европы. Офисы и стоянки компании расположены в
+        городах: Владивосток, Красноярск, Новосибирск. Сегодня, автомобиль из Японии, Кореи, Китая, США, ОАЭ и Европы
+        может приобрести каждый желающий из любой точки планеты.
+      </p>
+      <p>
+        Мы предоставляем возможность покупки автомобиля и спецтехники в рамках вашего бюджета без пробега по РФ,
+        переплат, скрытых комиссий и дополнительных расходов. Так же организуем процесс доставки техники с аукционов
+        Японии, Кореи, Китая, США, ОАЭ и Европы во все регионы России. Наличие партнеров за рубежом гарантирует высокое
+        качество поставляемых автомобилей и спецтехники и сводит финансовые риски к минимуму!
+      </p>
+      <p>
+        Перед началом работы и покупкой автомобиля или другой техники между заказчиком и нашей компанией «Юнион Авто»
+        заключается агентский договор, в котором изложены и регулируются все права и обязанности сторон. Предварительно
+        ознакомиться с условиями договора Вы можете на нашем сайте в разделе "Агентский договор". Заказчик платит именно
+        за тот
+      </p>
+    </div>
+  </div>
+</section>
+		
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+        <nav class="footerNav text--white">
+          <h5 class="h5 fw-semibold navTitle mb-3">
+            Услуги
+          </h5>
+          <ul class="fw-medium">
+            <li>
+              <a href="#">
+                Автомобили с аукционов Японии
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Автомобили с аукционов Китая
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Автомобили с аукционов Кореи
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Спецтехника с аукционов Японии
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Ввоз автомобиля под полную пошлину
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Доставка автомобилей из Владивостока
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <nav class="footerNav text--white">
+              <h5 class="h5 fw-semibold navTitle mb-3">
+                Каталог
+              </h5>
+              <ul class="fw-medium">
+                <li>
+                  <a href="#">
+                    Авто из Японии
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Авто из Китая
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Авто из Кореи
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Спецтехника
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-6">
+            <nav class="footerNav text--white">
+              <h5 class="h5 fw-semibold navTitle mb-4">
+                Компания
+              </h5>
+              <ul class="fw-semibold text--lg">
+                <li class="mb-4">
+                  <a href="#">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#">
+                    Информация
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="color-gray4 mb-2 fw-bold">Телефон:</div>
+        <a href="tel:88006007966" class="footerPhone text--white fw-medium">8 800 600-79-66</a>
+        <div class="color-gray4 mb-2 fw-medium text--13 mb-4">звонок по России бесплатно</div>
+        <div class="color-gray4 mb-2 fw-bold">Свяжитесь с нами:</div>
+        <ul class="d-flex gap-3 socials socials--gray">
+          <li>
+            <a href="#" target="_blank">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#whatsapp-call"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#telegram-call"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="color-gray4 mb-2 mt-4 fw-bold">Мы в соцсетях:</div>
+        <div class="d-flex align-items-center gap-2 socials">
+          <a href="#" class="socialLink" target="_blank">
+            <img src="img/admin/socials/icon-1.svg" alt="icon">
+          </a>
+          <a href="#" class="socialLink" target="_blank">
+            <img src="img/admin/socials/icon-2.svg" alt="icon">
+          </a>
+          <a href="#" class="socialLink" target="_blank">
+            <img src="img/admin/socials/icon-3.svg" alt="icon">
+          </a>
+        </div><!-- /socials -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <span class="text--white text--sm fw-medium">© 2024 «Union Auto»</span>
+      </div>
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <a class="text--white text--sm text-start text-lg-center fw-medium footerPolitic" href="#">Политика обработки
+          персональных
+          данных</a>
+      </div>
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <a class="d-flex align-items-center gap-2 justify-content-start justify-content-lg-end footerDevelop" href="#">
+          <img src="img/icons/develop.svg" alt="logo">
+          <span class="fw-medium text--white text--sm"> Разработка сайта – Вангер.рф </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="navFixed" id="navFixed">
+  <ul>
+    <li>
+      <a href="#" target="_blank">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#vk-round"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#whatsapp-round"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#telegram-round"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+		<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+    <h2 class="h2">Оставьте заявку</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <div class="modalForm">
+      <div class="inputW">
+        <input type="text" class="formInput" placeholder="Как вас зовут?">
+      </div>
+      <div class="inputW">
+        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+      </div>
+      <button class="button button--red formBtn">
+        Отправить заявку
+      </button>
+      <div class="agreement">
+        <p>
+          Нажимая кнопку выше, вы даёте согласие на обработку своих <a href="#" target="_blank">персональных данных.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- reviews -->
+<div class="modal" id="modalReviews">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <div class="modalGrid">
+      <div class="modalLeft">
+        <img src="img/admin/reviews/image-1.jpg" alt="image" class="reviewsImg">
+      </div>
+      <div class="modalRight">
+        <div class="reviewsCard bg-transparent cardText pt-5 pt-md-0 px-0">
+          <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+            <div class="d-flex align-items-center gap-1">
+              <img src="img/icons/avatar.svg" alt="person" class="reviewsCardPersonIcon">
+              <div class="d-block">
+                <span class="fw-medium d-block text--lg">Анна В.</span>
+                <span class="fw-medium d-block text--15 color-gray5 ">19 июня 2024 г.</span>
+              </div>
+            </div>
+            <img src="img/admin/reviews/logo-1.png" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+          </div>
+          <div class="content my-1">
+            <p>
+              Решил купить себе машину, но после неудачных поисков на «дром» решил заказать машину из Японии и не
+              пожалел. Был
+              подобран один из лучших вариантов желаемой машины. От начала поисков машины и до заветного получения
+              ключей
+              курировал менеджер Антон, грамотный, отзывчивый, позитивно настроенный специалист своего дела, который
+              помогал с
+              любым вопросом.
+            </p>
+            <p>
+              Так же хотелось отметить логиста Ксению, которая так же помогала с доставкой авто, решением проблем
+              переводов и
+              оплат счетов. Машина приехала с Японии быстро, без единых царапин(все как японец передал). Так же
+              порадовало что в
+              салоне было все чистенько, повесили фирменную вонючку, с ключами был фирменный брелок(мелочь, но приятно),
+              теперь
+              этот брелок будет напоминать о том от куда у меня появилась эта машина и какую работу проделала данная
+              компания!
+            </p>
+          </div>
+          <img src="img/admin/reviews/logo-1.png" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+        
+        </div><!-- /reviewsCard -->
+      </div>
+    </div>
+
+  </div>
+
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+
