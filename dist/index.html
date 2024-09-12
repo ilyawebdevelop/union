@@ -192,7 +192,7 @@
       <div class="bottom-bun"></div>
     </div><!-- /Hamburger Menu -->
 
-    <button class="button button--blue d-none d-lg-flex" disabled>Задать вопрос</button>
+    <button class="button button--blue d-none d-lg-flex" data-src="#modalOrder" data-fancybox>Задать вопрос</button>
   </div>
 
 </header>
@@ -1808,13 +1808,18 @@
       Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
     </p>
     <div class="modalForm">
-      <div class="inputW">
-        <input type="text" class="formInput" placeholder="Как вас зовут?">
+
+      <div class="inputW mb-2">
+        <input type="text" class="formInput" placeholder="Ваше имя">
+        <button class="clear" type="button"><img src="img/icons/clear.svg" alt="clear"></button>
       </div>
-      <div class="inputW">
-        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+
+      <div class="inputW mb-2">
+        <input type="tel" class="formInput" placeholder="Телефон">
+        <button class="clear" type="button"><img src="img/icons/clear.svg" alt="clear"></button>
       </div>
-      <button class="button button--red formBtn">
+
+      <button class="button button--blue formBtn w-100">
         Отправить заявку
       </button>
       <div class="agreement">
@@ -1876,7 +1881,7 @@
             </p>
           </div>
           <img src="img/admin/reviews/logo-1.png" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
-        
+
         </div><!-- /reviewsCard -->
       </div>
     </div>

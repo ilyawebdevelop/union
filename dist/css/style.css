@@ -15039,7 +15039,7 @@ a.color-blue-hover-black:hover {
   transition: color 0.2s linear;
 }
 .agreement a:hover {
-  color: #fff;
+  color: var(--blue);
 }
 .agreement--sm {
   font-size: 15px;
@@ -15312,6 +15312,11 @@ a.color-blue-hover-black:hover {
   background: var(--blue);
   color: #fff;
 }
+.button--blue:disabled {
+  background-color: var(--gray3);
+  color: #22215A;
+  pointer-events: none;
+}
 .button--blue:hover {
   background: var(--dark-blue);
 }
@@ -15569,6 +15574,16 @@ a.color-blue-hover-black:hover {
 
 .f-button.is-close-btn {
   background-color: transparent;
+}
+.f-button.is-close-btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.f-button.is-close-btn:focus-visible {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
 .breadcrumbs {
