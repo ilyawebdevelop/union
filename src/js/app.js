@@ -197,8 +197,7 @@ document.querySelectorAll('.productSlider').forEach(n => {
 let jsShowMore = document.querySelectorAll('.js-show-more');
 
 jsShowMore.forEach(el => {
-  el.addEventListener('click', () => {
-    console.log('123');
+  el.addEventListener('click', () => {  
     let linkText = el.textContent;
     let contentHidden = el.closest('.cardText').querySelector('.content');
     if (linkText == "Подробнее" || linkText == "Свернуть") {
@@ -282,8 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	headerFixed();
 
 	window.addEventListener('scroll', () => {
-		headerFixed();
-    console.log(header.offsetHeight);
+		headerFixed();   
 	});
 });
 

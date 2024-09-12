@@ -14900,6 +14900,16 @@ a.text--white:hover {
 
 a.border-b-gray-4:hover {
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+a.border-b-gray-4.h2 {
+  transition: color 0.2s linear;
+}
+a.border-b-gray-4.h2:hover {
+  color: var(--dark-blue);
+}
+a.border-b-gray-4.h2.text--white {
+  color: #fff;
 }
 
 .sliderNav {
@@ -16670,6 +16680,7 @@ a.color-blue-hover-black:hover {
 .carLogo--array {
   background-color: var(--gray2);
   border: none;
+  pointer-events: none;
 }
 
 .catalogSlider {
@@ -16777,9 +16788,12 @@ a.color-blue-hover-black:hover {
   border-radius: 8px;
 }
 .catLogoW .carLogo {
-  border: none;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.news--page .catLogoW .carLogo {
+  border: none;
 }
 
 @media (max-width: 575px) {

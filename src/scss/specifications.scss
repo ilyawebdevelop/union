@@ -668,7 +668,18 @@ a.text--white {
 a.border-b-gray-4 {
   &:hover {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
   }
+  &.h2 {
+    transition: color .2s linear;
+    &:hover {
+      color: var(--dark-blue);
+    }
+    &.text--white {
+      color: #fff;
+    }
+  }
+
 }
 
 .sliderNav {
