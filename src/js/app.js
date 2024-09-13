@@ -229,17 +229,6 @@ filterContentClose?.addEventListener('click', () => {
   bodyOverflow();
 });
 
-
-let formSelectArrayFilter = document.querySelectorAll('.filterContent .formSelect option');
-const mediaQueryMin992 = window.matchMedia('(min-width: 992px)');
-if (mediaQueryMin992.matches) {
-  formSelectArrayFilter.forEach(el => {
-    if (el.value == 'default') {
-      el.remove();
-    }
-  });
-}
-
 filterBtnHide?.addEventListener('click', () => {
   filterContent.classList.toggle('fields-hide-lg');
 });

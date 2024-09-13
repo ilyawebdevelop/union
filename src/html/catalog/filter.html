@@ -34,142 +34,132 @@
   </div>
   <div class="row">
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4">
-      <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Марка</div>
-        <select name="marka" id="marka" class="formSelect">
-          <option class="d-none" value="default">Марка</option>
+      <div class="inputW form-floating">
+        <select name="marka" id="marka" class="formSelect form-select">
           <option value="any">Любая</option>
           <option value="vw">VW</option>
           <option value="audi">Audi</option>
         </select>
+        <label for="marka">Марка</label>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4">
-      <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Модель</div>
-        <select name="model" id="model" class="formSelect">
-          <option class="d-none" value="default">Модель</option>
+      <div class="inputW form-floating">
+        <select name="model" id="model" class="formSelect form-select">
           <option value="any">Любая</option>
           <option value="100">100</option>
           <option value="80">80</option>
         </select>
+        <label for="model">Модель</label>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
-      <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Кузов</div>
-        <select name="kuzov" id="kuzov" class="formSelect">
-          <option class="d-none" value="default">Кузов</option>
+      <div class="inputW form-floating">
+        <select name="kuzov" id="kuzov" class="formSelect form-select">
           <option value="any">Любой</option>
           <option value="sedan">Седан</option>
           <option value="hetch">Хетчбек</option>
           <option value="universal">Универсал</option>
         </select>
+        <label for="kuzov">Кузов</label>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
-      <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Цвет</div>
-        <select name="cvet" id="cvet" class="formSelect">
-          <option class="d-none" value="default">Цвет</option>
+      <div class="inputW form-floating">
+        <select name="cvet" id="cvet" class="formSelect form-select">
           <option value="any">Любой</option>
           <option value="belyi">Белый</option>
           <option value="sinii">Синий</option>
           <option value="seryi">Серый</option>
         </select>
+        <label for="cvet">Цвет</label>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
-      <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Тип двигателя</div>
-        <select name="kuzov" id="kuzov" class="formSelect">
-          <option class="d-none" value="default">Тип двигателя</option>
+      <div class="inputW form-floating">
+        <select name="dvig" id="dvig" class="formSelect form-select">
           <option value="any">Любой</option>
           <option value="diesel">Дизель</option>
           <option value="benzin">Бензин</option>
         </select>
+        <label for="dvig">Тип двигателя</label>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
       <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Объём двигателя</div>
         <div class="inputDualW d-flex">
-          <div class="inputDual">
-            <span class="fw-medium">От</span>
-            <input type="text" placeholder="Двигатель от">
+          <div class="inputDual form-floating">
+            <input class="form-control" type="text" placeholder="Двигатель от" id="dvig_ot">
+            <label for="dvig_ot">Двигатель от</label>
           </div>
-          <div class="inputDual">
-            <span class="fw-medium">До</span>
-            <input type="text" placeholder="Двигатель до">
+          <div class="inputDual form-floating">
+            <input class="form-control" type="text" placeholder="Двигатель до" id="dvig_do">
+            <label for="dvig_do">Двигатель до</label>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide">
       <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Пробег, км</div>
         <div class="inputDualW d-flex">
-          <div class="inputDual">
-            <span class="fw-medium">От</span>
-            <input type="text" placeholder="Пробег от">
+          <div class="inputDual form-floating">
+            <input class="form-control" type="text" placeholder="Пробег от" id="probeg_ot">
+            <label for="probeg_ot">Пробег от</label>
           </div>
-          <div class="inputDual">
-            <span class="fw-medium">До</span>
-            <input type="text" placeholder="Пробег до">
+          <div class="inputDual form-floating">
+            <input class="form-control" type="text" placeholder="Пробег до" id="probeg_do">
+            <label for="probeg_do">Пробег до</label>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide">
       <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Год</div>
         <div class="inputDualW d-flex">
-          <div class="inputDual">
-            <span class="fw-medium">От</span>
-            <input type="text" placeholder="Год от">
+          <div class="inputDual form-floating">
+            <input class="form-control" type="text" placeholder="Год от" id="god_ot">
+            <label for="god_ot">Год от</label>
           </div>
-          <div class="inputDual">
-            <span class="fw-medium">До</span>
-            <input type="text" placeholder="Год до">
+          <div class="inputDual form-floating">
+            <input class="form-control" type="text" placeholder="Год до" id="god_do">
+            <label for="god_do">Год до</label>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
-      <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Стартовая цена</div>
+      <div class="inputW">     
         <div class="inputDualW d-flex">
-          <div class="inputDual">
-            <span class="fw-medium">От</span>
-            <input type="text" placeholder="Цена от">
+          <div class="inputDual form-floating">
+            <input class="form-control" type="text" placeholder="Цена от" id="cena_ot">
+            <label for="cena_ot">Цена от</label>
           </div>
-          <div class="inputDual">
-            <span class="fw-medium">До</span>
-            <input type="text" placeholder="Цена до">
+          <div class="inputDual form-floating">
+            <input class="form-control" type="text" placeholder="Цена до" id="cena_do">
+            <label for="cena_do">Цена до</label>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
-      <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Оценка</div>
-        <select name="kuzov" id="kuzov" class="formSelect">
-          <option class="d-none" value="default">Оценка</option>
+      <div class="inputW form-floating">
+        <select name="ocenka" id="ocenka" class="formSelect form-select">
           <option value="any">Любая</option>
           <option value="diesel">Оценка 1</option>
           <option value="benzin">Оценка 2</option>
         </select>
+        <label for="ocenka">Оценка</label>
       </div>
     </div>
     <div class="col-lg-4 col-xl-6 mb-2 mb-lg-4 inputW-sm-hide inputW-lg-hide">
-      <div class="inputW">
-        <div class="mb-2 fw-medium inputName d-none d-lg-block">Лот</div>
-        <input type="text" class="formInput" placeholder="Поиск по номеру лота">
+      <div class="inputW form-floating">
+        <input type="text" class="form-control formInput" placeholder="Поиск по номеру лота">
+        <label for="ocenka">Лот</label>
       </div>
     </div>
     <div class="col-lg-4 col-xl-3 mb-2 mb-lg-4 sortW">
-      <div class="inputW">     
-        <select name="kuzov" id="kuzov" class="formSelect">
+      <div class="inputW form-floating">
+        <select name="kuzov" id="kuzov" class="formSelect form-select">
           <option value="deshevyie">Сначала дешёвые</option>
           <option value="diesel">Дорогие</option>
           <option value="benzin">По дате</option>
@@ -190,7 +180,8 @@
         </button>
 
         <div class="d-flex gap-2 flex-column-reverse flex-lg-row btnW">
-          <button class="button button--blue gap-1">Показать<span class="d-inline-block d-lg-none"> 186 авто</span></button>
+          <button class="button button--blue gap-1">Показать<span class="d-inline-block d-lg-none"> 186
+              авто</span></button>
           <button class="button button--transparent resetBtn">Очистить</button>
           <button class="filterBtnCallContent button button--transparent">
             Показать все параметры

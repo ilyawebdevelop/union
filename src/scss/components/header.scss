@@ -31,6 +31,9 @@
   }
 
   &Logo {
+    img {
+      width: 176px;
+    }
     @media(max-width: 767px) {
       width: 176px;
     }
