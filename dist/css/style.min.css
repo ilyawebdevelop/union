@@ -15201,6 +15201,11 @@ a.color-blue-hover-black:hover {
   margin-left: auto;
 }
 
+.auctionSect .paramItem {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
 .paramList--hide-w.active .paramItem {
   display: flex;
 }
