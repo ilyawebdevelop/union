@@ -852,14 +852,16 @@
       <form action="#" class="form">
         <div class="row">
           <div class="col-lg-5 mb-2 mb-lg-0">
-            <div class="inputW">
-              <input type="text" class="formInput" placeholder="Ваше имя">
+            <div class="inputW form-floating">
+              <input type="text" class="form-control formInput" placeholder="Ваше имя" id="callbackText">
+              <label for="callbackText">Ваше имя</label>
               <button class="clear" type="button"><img src="img/icons/clear.svg" alt="clear"></button>
             </div>
           </div>
           <div class="col-lg-5 mb-2 mb-lg-0">
-            <div class="inputW">
-              <input type="tel" class="formInput" placeholder="Телефон">
+            <div class="inputW form-floating">
+              <input type="tel" class="form-control formInput" placeholder="Телефон" id="callbackPhone">
+              <label for="callbackPhone">Телефон</label>
               <button class="clear" type="button"><img src="img/icons/clear.svg" alt="clear"></button>
             </div>
           </div>
@@ -1823,13 +1825,15 @@
     </p>
     <div class="modalForm">
 
-      <div class="inputW mb-2">
-        <input type="text" class="formInput" placeholder="Ваше имя">
+      <div class="inputW form-floating mb-2">
+        <input type="text" class="form-control formInput" placeholder="Ваше имя" id="modalOrderText">
+        <label for="modalOrderText">Ваше имя</label>
         <button class="clear" type="button"><img src="img/icons/clear.svg" alt="clear"></button>
       </div>
 
-      <div class="inputW mb-2">
-        <input type="tel" class="formInput" placeholder="Телефон">
+      <div class="inputW form-floating mb-2">
+        <input type="tel" class="form-control formInput" placeholder="Телефон" id="modalOrderPhone">
+        <label for="modalOrderPhone">Телефон</label>
         <button class="clear" type="button"><img src="img/icons/clear.svg" alt="clear"></button>
       </div>
 
